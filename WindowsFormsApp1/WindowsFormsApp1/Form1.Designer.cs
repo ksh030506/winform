@@ -61,11 +61,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("굴림", 12F);
-            this.label3.Location = new System.Drawing.Point(359, 476);
+            this.label3.Location = new System.Drawing.Point(164, 474);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 20);
+            this.label3.Size = new System.Drawing.Size(153, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Hello World";
+            this.label3.Text = "BIM 계산 결과는";
             // 
             // textBox1
             // 

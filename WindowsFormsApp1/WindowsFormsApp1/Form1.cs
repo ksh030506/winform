@@ -27,7 +27,9 @@ namespace WindowsFormsApp1
             double x = double.Parse(textBox1.Text);
             double y = double.Parse(textBox2.Text);
 
+            double BIM = y / (x * x);
 
+            label3.Text = "당신의 BIM는 " + BIM.ToString();
         }
     }
 }
