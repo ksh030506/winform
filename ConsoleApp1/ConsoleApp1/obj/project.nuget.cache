@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+i9w4PeUdTnEj/FEmWuK2uYiCQ01vM5CL715tISY5sUi3Ry7+kUsDht+lhklE2j09LICYkUO+h+sxyN5uo2OWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KimSangHyun\\Documents\\GitHub\\winform\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KimSangHyun\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
