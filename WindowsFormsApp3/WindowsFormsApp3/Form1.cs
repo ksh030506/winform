@@ -28,5 +28,14 @@ namespace WindowsFormsApp3
         {
             MessageBox.Show("안녕");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form2 = new Form2();
+
+
+            form2.Show();
+            form2.MdiParent = this;
+        }
     }
 }
