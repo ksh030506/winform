@@ -29,30 +29,52 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
+            if (textBox1.Text == null && textBox2.Text == null)
+            {
+                textBox3.Text = "숫자를 입력해주세요";
+            }
+            else
+            {
+                double a = double.Parse(textBox1.Text);
+                double b = double.Parse(textBox2.Text);
 
-            double result = a + b;
 
-            label4.Text = "+";
-            textBox3.Text = a.ToString() + " + " + b.ToString() + "의 값은 " + result.ToString() + " 입니다.";
+                double result = a + b;
+
+                label4.Text = "+";
+                textBox3.Text = a.ToString() + " + " + b.ToString() + "의 값은 " + result.ToString() + " 입니다.";
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
+            if (textBox1.Text == null && textBox2.Text == null)
+            {
+                textBox3.Text = "숫자를 입력해주세요";
+            }
 
-            double result = a - b;
+            else
+            {
+                double a = double.Parse(textBox1.Text);
+                double b = double.Parse(textBox2.Text);
 
-            label4.Text = "-";
-            textBox3.Text = a.ToString() + " - " + b.ToString() + "의 값은 " + result.ToString() + " 입니다.";
+                double result = a - b;
+
+                label4.Text = "-";
+                textBox3.Text = a.ToString() + " - " + b.ToString() + "의 값은 " + result.ToString() + " 입니다.";
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
+            if (textBox1.Text == null && textBox2.Text == null)
+            {
+                textBox3.Text = "숫자를 입력해주세요";
+            }
+            else
+            {
+                double a = double.Parse(textBox1.Text);
+                double b = double.Parse(textBox2.Text);
 
 
                 double result = a / b;
@@ -60,19 +82,27 @@ namespace WindowsFormsApp2
 
                 label4.Text = "/";
                 textBox3.Text = a.ToString() + " / " + b.ToString() + "의 값은 " + result.ToString() + " 입니다.";
+            }
 
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
+            if (textBox1.Text == null && textBox2.Text == null)
+            {
+                textBox3.Text = "숫자를 입력해주세요";
+            }
+            else
+            {
+                double a = double.Parse(textBox1.Text);
+                double b = double.Parse(textBox2.Text);
 
-            double result = a * b;
+                double result = a * b;
 
-            label4.Text = "*";
-            textBox3.Text = a.ToString() + " * " + b.ToString() + "의 값은 " + result.ToString() + " 입니다.";
+                label4.Text = "*";
+                textBox3.Text = a.ToString() + " * " + b.ToString() + "의 값은 " + result.ToString() + " 입니다.";
+            }
         }
     }
 }
