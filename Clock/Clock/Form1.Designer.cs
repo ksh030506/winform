@@ -73,6 +73,7 @@
             this.아날로그ToolStripMenuItem.Name = "아날로그ToolStripMenuItem";
             this.아날로그ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.아날로그ToolStripMenuItem.Text = "아날로그";
+            this.아날로그ToolStripMenuItem.Click += new System.EventHandler(this.아날로그ToolStripMenuItem_Click);
             // 
             // 디지털ToolStripMenuItem1
             // 
