@@ -37,5 +37,15 @@ namespace WindowsFormsApp3
             form2.Show();
             form2.MdiParent = this;
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
