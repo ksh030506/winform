@@ -56,7 +56,20 @@ namespace Clock
             } else
             {
                 DrawClockFace();
+
+                aClockSetting();
             }
+
+        }
+
+        private void aClockSetting()
+        {
+            Center = new Point(panel1.Width / 2, panel1.Height / 2);   //판넬의 센터
+            radius = panel1.Height / 2;   //반지름
+
+            hourHand = (int)(radius * 0.45);   //시침길이
+            minHand = (int)(radius * 0.55);  //분침길이
+            secHand = (int)(radius * 0.65);    //시침길이
 
         }
 
@@ -66,7 +79,7 @@ namespace Clock
 
             g.DrawEllipse(pen, Center.X - 85, Center.Y - 85, 170, 170);   //시계판 그리기
 
-
+            
 
         }
 
@@ -76,6 +89,11 @@ namespace Clock
         }
 
         private void 아날로그ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void 디지털ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             _ = aClock_Flag == false;
         }

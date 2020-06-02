@@ -80,6 +80,7 @@
             this.디지털ToolStripMenuItem1.Name = "디지털ToolStripMenuItem1";
             this.디지털ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.디지털ToolStripMenuItem1.Text = "디지털";
+            this.디지털ToolStripMenuItem1.Click += new System.EventHandler(this.디지털ToolStripMenuItem1_Click);
             // 
             // 종료ToolStripMenuItem
             // 
