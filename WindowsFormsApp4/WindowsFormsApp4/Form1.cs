@@ -16,5 +16,15 @@ namespace WindowsFormsApp4
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(1, "김상현");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
