@@ -56,6 +56,44 @@ namespace WindowsFormsApp6
             //Rou생성
             DataRow row = dt.NewRow();
             row["NAME"] = textBox1.Text;
+
+            if (radioButton2.Checked)
+            {
+                row["SEX"] = "여자";
+            }
+            else if (radioButton1.Checked)
+            {
+                row["SEX"] = "남자";
+            }
+
+            row["REF"] = textBox2.Text;
+
+
+            //생성된 Row를 DataTable에 Add
+            if(bCheckIsTable)
+            {
+                ds.Tables[comboBox1.Text].Rows.Add(row);    //DataSet에 해당 Datatable넣기
+            }
+            else
+            {
+                dt.Rows.Add(row);    //신규로 작성한 DataTable에 Row를 등록함
+                ds.Tables.Add(dt);   
+            }
+
+            comboBox2_SelectedIndexChanged(this, null);
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = ds.Tables[comboBox2.Text];
+
+            //DatagridView Cell정렬 및 number를 적용
+            foreach(DataGridViewRow oRow in dataGridView1.Rows)
+            {
+                oRow.HeaderCell.Value = oRow.Index.ToString();
+            }
+            dataGridView1.AutoResizeRowHeadersWidth
+                (DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -68,10 +106,7 @@ namespace WindowsFormsApp6
 
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         
     }
