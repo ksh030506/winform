@@ -95,10 +95,12 @@ namespace WindowsFormsApp6
             dataGridView1.AutoResizeRowHeadersWidth
                 (DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            int iSelectRow = dataGridView1.SelectedRows[0].Index;
+            ds.Tables[comboBox2.Text].Rows.RemoveAt(iSelectRow);
 
+            comboBox2_SelectedIndexChanged(this, null);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -106,8 +108,9 @@ namespace WindowsFormsApp6
 
         }
 
-        
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
-        
+        }
     }
 }
