@@ -12,6 +12,8 @@ namespace WindowsFormsApp6
 {
     public partial class UserControl1 : UserControl
     {
+        internal static EventHandler myClic;
+
         public UserControl1()
         {
             InitializeComponent();
