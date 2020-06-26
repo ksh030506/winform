@@ -77,7 +77,65 @@ namespace Book_Project
         {
             textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells["BOOKNO"].Value.ToString();
             textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells["NAME"].Value.ToString();
-            textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells["BOOKNO"].Value.ToString();
+            textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells["BOOKNO"].Value.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string bookno = textBox1.Text;
+
+            //using기능을 사용하여 알아서 닫는 기능을 해준다
+            using (SqlConnection conn = new SqlConnection(constr))
+            {
+                conn.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = conn;
+                command.CommandText = "DELETE FROM BOOKS WHERE BOOKNO = " + bookno;
+                command.ExecuteNonQuery();   //sql문장 실행
+
+                button3_Click(null, null);   //재조회
+
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
+            }   //conn.Close를 자동으로 해준다.
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string bookno = textBox3.Text;
+            string bookname = textBox4.Text;
+
+            //using기능을 사용하여 알아서 닫는 기능을 해준다
+            using (SqlConnection conn = new SqlConnection(constr))
+            {
+                conn.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = conn;
+                command.CommandText = "UPDATE BOOKS SET NAME = '" + bookname + "'WHERE BOOKNO = " + bookno;
+                command.ExecuteNonQuery();   //sql문장 실행
+
+                button3_Click(null, null);   //재조회
+
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
+            }   //conn.Close를 자동으로 해준다.
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

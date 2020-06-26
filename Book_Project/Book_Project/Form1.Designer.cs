@@ -39,16 +39,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -124,6 +124,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "삭제";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -156,8 +157,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
@@ -168,19 +169,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "책 이름 변경";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(105, 69);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 25);
-            this.textBox3.TabIndex = 9;
-            // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(105, 36);
+            this.textBox4.Location = new System.Drawing.Point(105, 69);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 25);
-            this.textBox4.TabIndex = 8;
+            this.textBox4.Size = new System.Drawing.Size(162, 25);
+            this.textBox4.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(105, 36);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 25);
+            this.textBox3.TabIndex = 8;
             // 
             // button5
             // 
@@ -190,6 +191,7 @@
             this.button5.TabIndex = 7;
             this.button5.Text = "변경";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label3
             // 
@@ -213,8 +215,8 @@
             // 
             this.groupBox3.Controls.Add(this.textBox7);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.textBox5);
             this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.textBox5);
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
@@ -241,19 +243,19 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "책 코드";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(105, 94);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 25);
-            this.textBox5.TabIndex = 9;
-            // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(105, 48);
+            this.textBox6.Location = new System.Drawing.Point(105, 94);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 25);
-            this.textBox6.TabIndex = 8;
+            this.textBox6.Size = new System.Drawing.Size(162, 25);
+            this.textBox6.TabIndex = 9;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(105, 48);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 25);
+            this.textBox5.TabIndex = 8;
             // 
             // button6
             // 
@@ -263,6 +265,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "삭제";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label5
             // 
@@ -320,14 +323,14 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
