@@ -135,7 +135,29 @@ namespace Book_Project
 
         private void button6_Click(object sender, EventArgs e)
         {
+            string bookno1 = textBox5.Text;
+            string bookname = textBox6.Text;
+            string bookcode = textBox7.Text;
 
+            using (SqlConnection conn = new SqlConnection(constr))
+            {
+                conn.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = conn;
+                command.CommandText = "INSERT INTO BOOKS(BOOKNO, NAME, CODE) VALUES ('" + bookno1 + "','" + bookname + "','" + bookcode + "');";
+                command.ExecuteNonQuery();   //sql문장 실행
+
+                button3_Click(null, null);   //재조회
+
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
+            }   //conn.Close를 자동으로 해준다.
         }
     }
 }
